@@ -1,0 +1,485 @@
+{
+    "version": 7,
+    "sdrs": {
+        "rtlsdr": {
+            "name": "Sample",
+            "type": "rtl_sdr",
+            "profiles": {
+                "70cm": {
+                    "name": "70cm Repeaters",
+                    "center_freq": 438800000,
+                    "rf_gain": 29,
+                    "samp_rate": 2400000,
+                    "start_freq": 439275000,
+                    "start_mod": "nfm",
+                    "tuning_step": "1000"
+                },
+                "2m": {
+                    "name": "2m",
+                    "center_freq": 145000000,
+                    "rf_gain": 29,
+                    "samp_rate": 2048000,
+                    "start_freq": 145725000,
+                    "start_mod": "nfm",
+                    "tuning_step": "1000"
+                },
+                "db9d0b2b-e4b8-4b90-bc85-37546d9a0df3": {
+                    "name": "AirBand 2",
+                    "rf_gain": "auto",
+                    "center_freq": 122000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 127400000,
+                    "start_mod": "am",
+                    "tuning_step": 1
+                },
+                "066aa7d9-b508-42ee-9c2e-bfe45327f734": {
+                    "name": "AirBand 3",
+                    "rf_gain": "auto",
+                    "center_freq": 130000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 128824998,
+                    "start_mod": "am",
+                    "tuning_step": 1
+                },
+                "2687e167-8925-44c9-aa25-f1848b3409b0": {
+                    "name": "AirBand 4",
+                    "rf_gain": "auto",
+                    "center_freq": 136600000,
+                    "samp_rate": 2000000,
+                    "start_freq": 136500000,
+                    "start_mod": "am",
+                    "tuning_step": 1
+                },
+                "02ad0640-d3e2-432f-bd50-d944374bd2c7": {
+                    "name": "AirBand 1",
+                    "rf_gain": "auto",
+                    "center_freq": 119500000,
+                    "samp_rate": 2000000,
+                    "start_freq": 118000000,
+                    "start_mod": "am",
+                    "tuning_step": 1
+                },
+                "3c20e247-3b5c-4dbc-81e9-5eddb95b21e7": {
+                    "name": "Temp",
+                    "rf_gain": "auto",
+                    "center_freq": 146835000,
+                    "samp_rate": 1900000,
+                    "start_freq": 146835000,
+                    "start_mod": "nfm",
+                    "tuning_step": 10000
+                },
+                "256c0cc1-b4df-4ac0-a6e2-8ba7ab228116": {
+                    "name": "Old Barney",
+                    "rf_gain": "auto",
+                    "center_freq": 146835000,
+                    "samp_rate": 2400000,
+                    "start_freq": 146835000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "3e658abc-20d7-4b43-8a3b-a0b1d4fe40e6": {
+                    "name": "Amateur Radio Trenton",
+                    "center_freq": 146670000,
+                    "samp_rate": 2000000,
+                    "start_freq": 146670000,
+                    "start_mod": "nfm"
+                },
+                "dc7b2a11-274a-4fc3-b5e3-a22fbc291f98": {
+                    "name": "FRS1",
+                    "center_freq": 462600000,
+                    "samp_rate": 2200000,
+                    "start_freq": 462600000,
+                    "start_mod": "nfm"
+                },
+                "050bd17f-94cd-467b-bea3-d8c545651434": {
+                    "name": "Marine Radio",
+                    "center_freq": 151800000,
+                    "samp_rate": 2000000,
+                    "start_freq": 151800000,
+                    "start_mod": "nfm",
+                    "initial_squelch_level": 41
+                },
+                "a9e69ce3-664c-479a-a35c-af85677890dc": {
+                    "name": "Weather",
+                    "center_freq": 162463000,
+                    "samp_rate": 2000000,
+                    "start_freq": 162463000,
+                    "start_mod": "nfm",
+                    "initial_squelch_level": 36
+                },
+                "3c3d5328-4eb3-40af-b4d1-769f5e6d0f13": {
+                    "name": "CB",
+                    "center_freq": 27185000,
+                    "samp_rate": 2000000,
+                    "start_freq": 27185000,
+                    "start_mod": "am",
+                    "initial_squelch_level": 40
+                },
+                "b521496c-2d3c-4655-a575-52d6771007f0": {
+                    "name": "Baby Monitors",
+                    "center_freq": 426000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 426000000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "bce278eb-c217-4c59-a285-fbeed986da88": {
+                    "name": "Industrial Scientific",
+                    "center_freq": 902500000,
+                    "samp_rate": 2000000,
+                    "start_freq": 902500000,
+                    "start_mod": "nfm"
+                },
+                "d4437763-c0bb-4f69-ab35-ea4e0c9557cc": {
+                    "name": "Wifi 2.4",
+                    "center_freq": 2400000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 2400000000,
+                    "start_mod": "nfm"
+                },
+                "2309f335-8c86-4e30-94e6-7c91eae39546": {
+                    "name": "FRS2",
+                    "center_freq": 467600000,
+                    "samp_rate": 2200000,
+                    "start_freq": 467600000,
+                    "start_mod": "nfm"
+                },
+                "3c89f2b9-decc-4e17-be26-4e84ba9b673f": {
+                    "name": "WSPR 50.010",
+                    "center_freq": 50010000,
+                    "samp_rate": 2000000,
+                    "start_freq": 50010000,
+                    "start_mod": "wspr"
+                },
+                "389fdd98-2a2b-4948-b1b0-0bca1682bcd6": {
+                    "name": "Rick Bus Company",
+                    "center_freq": 152383000,
+                    "samp_rate": 1000000,
+                    "start_freq": 152383000,
+                    "start_mod": "nfm",
+                    "initial_squelch_level": 40,
+                    "tuning_step": 1
+                },
+                "942bfc2a-de56-43ed-9cb7-76dad6f0d5b6": {
+                    "name": "Low 26",
+                    "center_freq": 26500000,
+                    "samp_rate": 2000000,
+                    "start_freq": 26500000,
+                    "start_mod": "am"
+                },
+                "2bc55464-adae-47fe-b48b-44584928ab06": {
+                    "name": "1090",
+                    "center_freq": 1090000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 1090000000,
+                    "start_mod": "adsb",
+                    "tuning_step": 100
+                },
+                "2613df7d-19c1-4c46-81fb-f8f908ddbc1f": {
+                    "name": "ISM Digital Devices",
+                    "center_freq": 433800000,
+                    "samp_rate": 2000000,
+                    "start_freq": 433900000,
+                    "start_mod": "ism",
+                    "tuning_step": 1
+                },
+                "609f0f83-014c-4c4f-9968-be0664a14778": {
+                    "name": "APRS",
+                    "center_freq": 144390000,
+                    "samp_rate": 2200000,
+                    "start_freq": 144390000,
+                    "start_mod": "packet",
+                    "tuning_step": 1
+                },
+                "81ec2b5d-2cf1-4915-8f21-1b382aa9e5c1": {
+                    "name": "TTN",
+                    "center_freq": 124500000,
+                    "samp_rate": 2400000,
+                    "start_freq": 125000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "initial_squelch_level": -40
+                },
+                "7b2e9e08-0acd-4f4a-a87a-3bf54588c42b": {
+                    "name": "TTN Approach and Departure",
+                    "center_freq": 122850000,
+                    "samp_rate": 2400000,
+                    "start_freq": 123800000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "initial_squelch_level": -40
+                },
+                "e0813cc6-639a-4a56-b1bf-c778c4201245": {
+                    "name": "Pagers",
+                    "center_freq": 930000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 929613000,
+                    "start_mod": "page",
+                    "tuning_step": 1,
+                    "rf_gain": "auto"
+                },
+                "766e40c4-3f8c-4ea1-a16f-54e10c6d1ceb": {
+                    "name": "Hamilton Fire",
+                    "center_freq": 154429000,
+                    "samp_rate": 2400000,
+                    "start_freq": 154429000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "5a51b262-5754-43bc-8ccf-aa2a7789ed87": {
+                    "name": "Shortwave",
+                    "center_freq": 39000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 39000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 0
+                },
+                "2f72c6ee-96fa-4959-b765-d5db9ffafd28": {
+                    "name": "AM",
+                    "center_freq": 10000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 10000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1
+                },
+                "febb5f94-3048-4b9f-ad69-65e8fb2ad435": {
+                    "name": "FM Radio 88.9",
+                    "center_freq": 89900000,
+                    "samp_rate": 2400000,
+                    "start_freq": 89900000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "714f3514-3934-4fb7-9010-29736554b5ee": {
+                    "name": "FM Radio 91.9",
+                    "rf_gain": "auto",
+                    "center_freq": 91900000,
+                    "samp_rate": 2400000,
+                    "start_freq": 91900000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "07490045-c8fe-4d66-8c1a-8cb3c8840503": {
+                    "name": "FM Radio 98.5",
+                    "rf_gain": "auto",
+                    "center_freq": 98500000,
+                    "samp_rate": 2400000,
+                    "start_freq": 98500000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "3444ac33-e243-4f3f-a6e0-a4c68a2ff87b": {
+                    "name": "FM Radio 100.1",
+                    "rf_gain": "auto",
+                    "center_freq": 100100000,
+                    "samp_rate": 1900000,
+                    "start_freq": 100100000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "d8490927-3112-4ab3-a5be-ca07fa03663d": {
+                    "name": "FM Radio 101.5",
+                    "rf_gain": "auto",
+                    "center_freq": 101500000,
+                    "samp_rate": 2400000,
+                    "start_freq": 101500000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "4add15cd-1be0-4dc5-9048-d553025f69ed": {
+                    "name": "FM Radio 104.9",
+                    "rf_gain": "auto",
+                    "center_freq": 104900000,
+                    "samp_rate": 2400000,
+                    "start_freq": 104900000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "6afdaf34-6d6e-4fba-aca6-e4463610a27e": {
+                    "name": "FM Radio 105.7",
+                    "rf_gain": "auto",
+                    "center_freq": 105700000,
+                    "samp_rate": 2400000,
+                    "start_freq": 105700000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "bd77044e-f3c6-4142-beb7-eb07275245d3": {
+                    "name": "FM Radio 106.5",
+                    "rf_gain": "auto",
+                    "center_freq": 106500000,
+                    "samp_rate": 2400000,
+                    "start_freq": 106500000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+                },
+                "7fc1a4a3-1a8a-4ad6-b601-36c2d54c66d1": {
+                    "name": "FM Radio 107.9",
+                    "rf_gain": "auto",
+                    "center_freq": 107900000,
+                    "samp_rate": 2400000,
+                    "start_freq": 107900000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000
+               },
+                "3413b277-c521-4a0a-92fe-355ccebaf471": {
+                    "name": "Police Dispatch",
+                    "rf_gain": "auto",
+                    "center_freq": 460450000,
+                    "samp_rate": 1800000,
+                    "start_freq": 460450000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "9fe937e7-06b6-43f4-94af-9759cd28a168": {
+                    "name": "Police Channel 9",
+                    "rf_gain": "auto",
+                    "center_freq": 460025000,
+                    "samp_rate": 2000000,
+                    "start_freq": 460025000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "53101b76-5af5-408d-9631-4b52d12c43c2": {
+                    "name": "EMS 6",
+                    "rf_gain": "auto",
+                    "center_freq": 151580000,
+                    "samp_rate": 2000000,
+                    "start_freq": 151580000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "b65e3fcc-38e9-421a-badb-d42c315c917f": {
+                    "name": "School Buses",
+                    "rf_gain": "auto",
+                    "center_freq": 152300000,
+                    "samp_rate": 2000000,
+                    "start_freq": 152300000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "12ee1cd5-d288-4ece-a7ce-ca607c10553c": {
+                    "name": "Public Works",
+                    "rf_gain": "auto",
+                    "center_freq": 155955000,
+                    "samp_rate": 2000000,
+                    "start_freq": 155955000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "c7666925-73c1-4871-bb5d-732f6ccbf9b0": {
+                    "name": "Utilities",
+                    "rf_gain": "auto",
+                    "center_freq": 451487500,
+                    "samp_rate": 2000000,
+                    "start_freq": 451487500,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "W2NJR Repeater": {
+                    "name": "W2NJR Repeater",
+                    "rf_gain": "auto",
+                    "center_freq": 445075000,
+                    "samp_rate": 2000000,
+                    "start_freq": 445075000,
+                    "start_mod": "nfm",
+                    "tuning_step": 1
+                },
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "samp_rate": 384000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "samp_rate": 192000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "samp_rate": 256000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb",
+                    "tuning_step": "500"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "samp_rate": 384000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb",
+                    "tuning_step": "500"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6050000,
+                    "samp_rate": 384000,
+                    "start_freq": 6070000,
+                    "start_mod": "am",
+                    "tuning_step": "1000"
+                }
+            }
+        }
+    },
+    "receiver_name": "wrut934",
+    "receiver_location": "New Jersey, USA",
+    "receiver_asl": 200,
+    "receiver_admin": "example@example.com",
+    "receiver_gps": {
+        "lat": 39.73735702942177,
+        "lon": -74.24152698656782
+    },
+    "photo_title": "",
+    "photo_desc": "",
+    "max_clients": 20,
+    "keep_files": 20,
+    "session_timeout": 0,
+    "usage_policy_url": "policy",
+    "allow_audio_recording": true,
+    "allow_center_freq_changes": true,
+    "magic_key": "memagic",
+    "receiver_keys": [
+        ""
+    ],
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "fft_fps": 9,
+    "fft_size": 4096,
+    "fft_voverlap_factor": 0.3,
+    "waterfall_levels": {
+        "min": -88.0,
+        "max": -20.0
+    },
+    "waterfall_auto_levels": {
+        "min": 3.0,
+        "max": 10.0
+    },
+    "waterfall_auto_min_range": 50,
+    "audio_compression": "adpcm",
+    "fft_compression": "adpcm",
+    "ui_opacity": 100,
+    "ui_frame": false,
+    "tuning_precision": 2,
+    "ui_swap_wheel": false,
+    "eibi_bookmarks_range": 0,
+    "repeater_range": 0,
+    "map_type": "google",
+    "google_maps_api_key": "",
+    "openweathermap_api_key": "",
+    "map_position_retention_time": 7200,
+    "map_ignore_indirect_reports": false,
+    "map_prefer_recent_reports": true,
+    "callsign_url": "https://www.qrzcq.com/call/{}",
+    "vessel_url": "https://www.vesselfinder.com/vessels/details/{}",
+    "flight_url": "https://flightaware.com/live/flight/{}",
+    "modes_url": "https://www.planespotters.net/hex/{}"
+}
