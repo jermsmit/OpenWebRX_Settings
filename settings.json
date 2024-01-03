@@ -1,8 +1,8 @@
 {
-    "version": 7,
+    "version": 8,
     "sdrs": {
         "rtlsdr": {
-            "name": "Sample",
+            "name": "RTL- ",
             "type": "rtl_sdr",
             "profiles": {
                 "70cm": {
@@ -58,15 +58,6 @@
                     "start_freq": 118000000,
                     "start_mod": "am",
                     "tuning_step": 1
-                },
-                "3c20e247-3b5c-4dbc-81e9-5eddb95b21e7": {
-                    "name": "Temp",
-                    "rf_gain": "auto",
-                    "center_freq": 146835000,
-                    "samp_rate": 1900000,
-                    "start_freq": 146835000,
-                    "start_mod": "nfm",
-                    "tuning_step": 10000
                 },
                 "256c0cc1-b4df-4ac0-a6e2-8ba7ab228116": {
                     "name": "Old Barney",
@@ -218,14 +209,6 @@
                     "tuning_step": 1,
                     "rf_gain": "auto"
                 },
-                "766e40c4-3f8c-4ea1-a16f-54e10c6d1ceb": {
-                    "name": "Hamilton Fire",
-                    "center_freq": 154429000,
-                    "samp_rate": 2400000,
-                    "start_freq": 154429000,
-                    "start_mod": "nfm",
-                    "tuning_step": 1
-                },
                 "5a51b262-5754-43bc-8ccf-aa2a7789ed87": {
                     "name": "Shortwave",
                     "center_freq": 39000000,
@@ -234,15 +217,6 @@
                     "start_mod": "am",
                     "tuning_step": 1,
                     "direct_sampling": 0
-                },
-                "2f72c6ee-96fa-4959-b765-d5db9ffafd28": {
-                    "name": "AM",
-                    "center_freq": 10000000,
-                    "samp_rate": 2400000,
-                    "start_freq": 10000000,
-                    "start_mod": "am",
-                    "tuning_step": 1,
-                    "direct_sampling": 1
                 },
                 "febb5f94-3048-4b9f-ad69-65e8fb2ad435": {
                     "name": "FM Radio 88.9",
@@ -324,7 +298,7 @@
                     "start_freq": 107900000,
                     "start_mod": "wfm",
                     "tuning_step": 50000
-               },
+                },
                 "3413b277-c521-4a0a-92fe-355ccebaf471": {
                     "name": "Police Dispatch",
                     "rf_gain": "auto",
@@ -332,7 +306,8 @@
                     "samp_rate": 1800000,
                     "start_freq": 460450000,
                     "start_mod": "nfm",
-                    "tuning_step": 1
+                    "tuning_step": 1,
+                    "initial_squelch_level": -32
                 },
                 "9fe937e7-06b6-43f4-94af-9759cd28a168": {
                     "name": "Police Channel 9",
@@ -418,7 +393,8 @@
                     "samp_rate": 384000,
                     "start_freq": 3570000,
                     "start_mod": "lsb",
-                    "tuning_step": "500"
+                    "tuning_step": 500,
+                    "rf_gain": "auto"
                 },
                 "49m": {
                     "name": "49m Broadcast",
@@ -429,6 +405,334 @@
                     "tuning_step": "1000"
                 }
             }
+        },
+        "f8fc23c4-e95d-4ac0-a9b7-bd23ae405124": {
+            "name": "DS_I-",
+            "type": "rtl_sdr",
+            "profiles": {
+                "150 Meters": {
+                    "name": "160 Meters",
+                    "center_freq": 1900000,
+                    "samp_rate": 2400000,
+                    "start_freq": 1000000,
+                    "start_mod": "lsb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "2 MHz AM": {
+                    "name": "2 MHz AM",
+                    "center_freq": 2000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 2000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "50 Meters": {
+                    "name": "80 Meters",
+                    "center_freq": 3600000,
+                    "samp_rate": 2400000,
+                    "start_freq": 3000000,
+                    "start_mod": "lsb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "4 MHz AM": {
+                    "name": "4 MHz AM",
+                    "center_freq": 4000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 4000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "5 MHz AM": {
+                    "name": "5 MHz AM",
+                    "center_freq": 5000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 5000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "6 MHz AM": {
+                    "name": "6 MHz AM",
+                    "center_freq": 6000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 6000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "40 Meters": {
+                    "name": "40 Meters",
+                    "center_freq": 7100000,
+                    "samp_rate": 2400000,
+                    "start_freq": 7000000,
+                    "start_mod": "lsb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "8 MHz AM": {
+                    "name": "8 MHz AM",
+                    "center_freq": 8000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 8000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "9 MHz AM": {
+                    "name": "9 MHz AM",
+                    "center_freq": 9000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 9000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "30 Meters": {
+                    "name": "30 Meters",
+                    "center_freq": 10120000,
+                    "samp_rate": 2400000,
+                    "start_freq": 10000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "11 MHz AM": {
+                    "name": "11 MHz AM",
+                    "center_freq": 11000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 11000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "12 MHz AM": {
+                    "name": "12 MHz AM",
+                    "center_freq": 12000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 12000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "13 MHz AM": {
+                    "name": "13 MHz AM",
+                    "center_freq": 13000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 13000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "20 Meters": {
+                    "name": "20 Meters",
+                    "center_freq": 14150000,
+                    "samp_rate": 2400000,
+                    "start_freq": 14000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "15 MHz AM": {
+                    "name": "15 MHz AM",
+                    "center_freq": 15000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 15000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "16 MHz AM": {
+                    "name": "16 MHz AM",
+                    "center_freq": 16000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 16000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "17 MHz AM": {
+                    "name": "17 MHz AM",
+                    "center_freq": 17000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 17000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "17 Meters": {
+                    "name": "17 Meters",
+                    "center_freq": 17000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 17000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "18 MHz AM": {
+                    "name": "18 MHz AM",
+                    "center_freq": 18000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 18000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "19 MHz AM": {
+                    "name": "19 MHz AM",
+                    "center_freq": 19000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 19000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "20 MHz AM": {
+                    "name": "20 MHz AM",
+                    "center_freq": 20000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 20000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "15 Meters": {
+                    "name": "15 Meters",
+                    "center_freq": 21000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 21000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "22 MHz AM": {
+                    "name": "22 MHz AM",
+                    "center_freq": 22000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 22000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "23 MHz AM": {
+                    "name": "23 MHz AM",
+                    "center_freq": 23000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 23000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "12 Meters": {
+                    "name": "12 Meters",
+                    "center_freq": 24000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 24000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "24 MHz AM": {
+                    "name": "24 MHz AM",
+                    "center_freq": 24000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 24000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "25 MHz AM": {
+                    "name": "25 MHz AM",
+                    "center_freq": 25000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 25000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "26 MHz AM": {
+                    "name": "26 MHz AM",
+                    "center_freq": 26000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 26000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "27 MHz AM": {
+                    "name": "27 MHz AM",
+                    "center_freq": 30000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 30000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "10 Meters": {
+                    "name": "10 Meters",
+                    "center_freq": 28000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 28000000,
+                    "start_mod": "usb",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "29 MHz AM": {
+                    "name": "29 MHz AM",
+                    "center_freq": 29000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 29000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                },
+                "30 MHz AM": {
+                    "name": "30 MHz AM",
+                    "center_freq": 30000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 30000000,
+                    "start_mod": "am",
+                    "tuning_step": 1,
+                    "direct_sampling": 1,
+                    "rf_gain": "auto"
+                }
+            },
+            "rf_gain": "auto",
+            "direct_sampling": 1
         }
     },
     "receiver_name": "wrut934",
@@ -446,11 +750,9 @@
     "session_timeout": 0,
     "usage_policy_url": "policy",
     "allow_audio_recording": true,
-    "allow_center_freq_changes": true,
+    "allow_center_freq_changes": false,
     "magic_key": "memagic",
-    "receiver_keys": [
-        ""
-    ],
+    "receiver_keys": [],
     "waterfall_scheme": "GoogleTurboWaterfall",
     "fft_fps": 9,
     "fft_size": 4096,
@@ -463,13 +765,11 @@
         "min": 3.0,
         "max": 10.0
     },
+    "waterfall_auto_level_default_mode": false,
     "waterfall_auto_min_range": 50,
     "audio_compression": "adpcm",
     "fft_compression": "adpcm",
-    "ui_opacity": 100,
-    "ui_frame": false,
     "tuning_precision": 2,
-    "ui_swap_wheel": false,
     "eibi_bookmarks_range": 0,
     "repeater_range": 0,
     "map_type": "google",
@@ -481,5 +781,5 @@
     "callsign_url": "https://www.qrzcq.com/call/{}",
     "vessel_url": "https://www.vesselfinder.com/vessels/details/{}",
     "flight_url": "https://flightaware.com/live/flight/{}",
-    "modes_url": "https://www.planespotters.net/hex/{}"
+    "modes_url": "https://flightaware.com/live/modes/{}/redirect"
 }
