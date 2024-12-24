@@ -2,9 +2,195 @@
     "version": 8,
     "sdrs": {
         "rtlsdr": {
-            "name": "RTL-SDR -",
+            "name": "RTL-SDR",
             "type": "rtl_sdr",
             "profiles": {
+                "70cm": {
+                    "name": "70cm Repeaters",
+                    "center_freq": 438800000,
+                    "rf_gain": 29,
+                    "samp_rate": 2400000,
+                    "start_freq": 439275000,
+                    "start_mod": "nfm",
+                    "tuning_step": "5000"
+                },
+                "2m": {
+                    "name": "2m",
+                    "center_freq": 145000000,
+                    "rf_gain": 29,
+                    "samp_rate": 2048000,
+                    "start_freq": 145725000,
+                    "start_mod": "nfm",
+                    "tuning_step": "1000"
+                },
+                "125cm": {
+                    "name": "1.25m",
+                    "center_freq": 223500000,
+                    "samp_rate": 4000000,
+                    "start_freq": 224000000,
+                    "start_mod": "nfm",
+                    "tuning_step": "5000"
+                },
+                "6m": {
+                    "name": "6m",
+                    "center_freq": 52000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 53000000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "10m": {
+                    "name": "10m",
+                    "center_freq": 28850000,
+                    "samp_rate": 2000000,
+                    "start_freq": 29000000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "cb": {
+                    "name": "11m CB",
+                    "center_freq": 27000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 26965000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "12m": {
+                    "name": "12m",
+                    "center_freq": 24940000,
+                    "samp_rate": 250000,
+                    "start_freq": 24950000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "15m": {
+                    "name": "15m",
+                    "center_freq": 21225000,
+                    "samp_rate": 500000,
+                    "start_freq": 21220000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "17m": {
+                    "name": "17m",
+                    "center_freq": 18118000,
+                    "samp_rate": 250000,
+                    "start_freq": 18110000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "20m": {
+                    "name": "20m",
+                    "center_freq": 14150000,
+                    "samp_rate": 384000,
+                    "start_freq": 14070000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "30m": {
+                    "name": "30m",
+                    "center_freq": 10125000,
+                    "samp_rate": 192000,
+                    "start_freq": 10142000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "40m": {
+                    "name": "40m",
+                    "center_freq": 7100000,
+                    "samp_rate": 256000,
+                    "start_freq": 7070000,
+                    "start_mod": "lsb",
+                    "tuning_step": "500"
+                },
+                "60m": {
+                    "name": "60m",
+                    "center_freq": 5350000,
+                    "samp_rate": 250000,
+                    "start_freq": 5357000,
+                    "start_mod": "usb",
+                    "tuning_step": "500"
+                },
+                "80m": {
+                    "name": "80m",
+                    "center_freq": 3650000,
+                    "samp_rate": 384000,
+                    "start_freq": 3570000,
+                    "start_mod": "lsb",
+                    "tuning_step": "500"
+                },
+                "160m": {
+                    "name": "160m",
+                    "center_freq": 1900000,
+                    "samp_rate": 250000,
+                    "start_freq": 1910000,
+                    "start_mod": "lsb",
+                    "tuning_step": "500"
+                },
+                "am": {
+                    "name": "AM Broadcast",
+                    "center_freq": 1100000,
+                    "samp_rate": 1000000,
+                    "start_freq": 1300000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "49m": {
+                    "name": "49m Broadcast",
+                    "center_freq": 6050000,
+                    "samp_rate": 384000,
+                    "start_freq": 6070000,
+                    "start_mod": "am",
+                    "tuning_step": "1000"
+                },
+                "41m": {
+                    "name": "41m Broadcast",
+                    "center_freq": 7325000,
+                    "samp_rate": 250000,
+                    "start_freq": 7320000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "31m": {
+                    "name": "31m Broadcast",
+                    "center_freq": 9650000,
+                    "samp_rate": 500000,
+                    "start_freq": 9700000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "25m": {
+                    "name": "25m Broadcast",
+                    "center_freq": 11850000,
+                    "samp_rate": 500000,
+                    "start_freq": 12000000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "22m": {
+                    "name": "22m Broadcast",
+                    "center_freq": 13720000,
+                    "samp_rate": 500000,
+                    "start_freq": 13800000,
+                    "start_mod": "am",
+                    "tuning_step": "5000"
+                },
+                "ism433": {
+                    "name": "433MHz ISM",
+                    "center_freq": 433000000,
+                    "samp_rate": 2000000,
+                    "start_freq": 433000000,
+                    "start_mod": "nfm",
+                    "tuning_step": "25000"
+                },
+                "adsb1090": {
+                    "name": "1090MHz ADSB",
+                    "center_freq": 1090000000,
+                    "samp_rate": 4000000,
+                    "start_freq": 1090000000,
+                    "start_mod": "nfm",
+                    "tuning_step": "25000"
+                },
                 "2m 144-146MHz": {
                     "name": "2m 144-146MHz",
                     "center_freq": 145000000,
@@ -258,60 +444,197 @@
                     "start_freq": 445075000,
                     "start_mod": "nfm",
                     "tuning_step": 1
+                }
+            }
+        },
+        "c7613a18-0863-4086-8e38-edca536e598e": {
+            "name": "RADIO-",
+            "type": "rtl_sdr",
+            "profiles": {
+                "FM 88 MHz": {
+                    "name": "FM 88 MHz",
+                    "center_freq": 88000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 88000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "20m": {
-                    "name": "20m",
-                    "center_freq": 14150000,
-                    "samp_rate": 384000,
-                    "start_freq": 14070000,
-                    "start_mod": "usb",
-                    "tuning_step": "500"
+                "FM 89 MHz": {
+                    "name": "FM 89 MHz",
+                    "center_freq": 89000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 89000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "30m": {
-                    "name": "30m",
-                    "center_freq": 10125000,
-                    "samp_rate": 192000,
-                    "start_freq": 10142000,
-                    "start_mod": "usb",
-                    "tuning_step": "500"
+                "FM 90 MHz": {
+                    "name": "FM 90 MHz",
+                    "center_freq": 90000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 90000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "40m": {
-                    "name": "40m",
-                    "center_freq": 7100000,
-                    "samp_rate": 256000,
-                    "start_freq": 7070000,
-                    "start_mod": "lsb",
-                    "tuning_step": "500"
+                "FM 91 MHz": {
+                    "name": "FM 91 MHz",
+                    "center_freq": 91000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 91000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "80m": {
-                    "name": "80m",
-                    "center_freq": 3650000,
-                    "samp_rate": 384000,
-                    "start_freq": 3570000,
-                    "start_mod": "lsb",
-                    "tuning_step": "500"
+                "FM 92 MHz": {
+                    "name": "FM 92 MHz",
+                    "center_freq": 92000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 92000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "49m": {
-                    "name": "49m Broadcast",
-                    "center_freq": 6050000,
-                    "samp_rate": 384000,
-                    "start_freq": 6070000,
-                    "start_mod": "am",
-                    "tuning_step": "1000"
+                "FM 93 MHz": {
+                    "name": "FM 93 MHz",
+                    "center_freq": 93000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 93000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 },
-                "2m": {
-                    "name": "2m",
-                    "center_freq": 145000000,
-                    "rf_gain": 29,
-                    "samp_rate": 2048000,
-                    "start_freq": 145725000,
-                    "start_mod": "nfm",
-                    "tuning_step": "1000"
+                "FM 94 MHz": {
+                    "name": "FM 94 MHz",
+                    "center_freq": 94000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 94000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 95 MHz": {
+                    "name": "FM 95 MHz",
+                    "center_freq": 95000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 95000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 96 MHz": {
+                    "name": "FM 96 MHz",
+                    "center_freq": 96000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 96000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 97 MHz": {
+                    "name": "FM 97 MHz",
+                    "center_freq": 97000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 97000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 98 MHz": {
+                    "name": "FM 98 MHz",
+                    "center_freq": 98000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 98000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 99 MHz": {
+                    "name": "FM 99 MHz",
+                    "center_freq": 99000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 99000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 100 MHz": {
+                    "name": "FM 100 MHz",
+                    "center_freq": 100000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 100000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 101 MHz": {
+                    "name": "FM 101 MHz",
+                    "center_freq": 101000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 101000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 102 MHz": {
+                    "name": "FM 102 MHz",
+                    "center_freq": 102000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 102000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 103 MHz": {
+                    "name": "FM 103 MHz",
+                    "center_freq": 103000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 103000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 104 MHz": {
+                    "name": "FM 104 MHz",
+                    "center_freq": 104000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 104000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 105 MHz": {
+                    "name": "FM 105 MHz",
+                    "center_freq": 105000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 105000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 106 MHz": {
+                    "name": "FM 106 MHz",
+                    "center_freq": 106000000,
+                    "samp_rate": 1900000,
+                    "start_freq": 106000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
+                },
+                "FM 107 MHz": {
+                    "name": "FM 107 MHz",
+                    "center_freq": 107000000,
+                    "samp_rate": 2400000,
+                    "start_freq": 107000000,
+                    "start_mod": "wfm",
+                    "tuning_step": 50000,
+                    "rf_gain": "auto"
                 }
             }
         },
         "22d76dbb-e6e6-40d1-832e-20a5f938c65c": {
-            "name": "HF | 0 - 30 MHz\t- ",
+            "name": "0 - 30 MHz\t-",
             "type": "rtl_sdr",
             "profiles": {
                 "1 MHz AM": {
@@ -330,7 +653,8 @@
                     "start_freq": 2000000,
                     "start_mod": "am",
                     "tuning_step": 1,
-                    "rf_gain": "auto"
+                    "rf_gain": "auto",
+                    "direct_sampling": 0
                 },
                 "3 MHz AM": {
                     "name": "3 MHz AM",
@@ -339,7 +663,8 @@
                     "start_freq": 3000000,
                     "start_mod": "am",
                     "tuning_step": 1,
-                    "rf_gain": "auto"
+                    "rf_gain": "auto",
+                    "direct_sampling": 0
                 },
                 "50 Meters": {
                     "name": "80 Meters",
@@ -587,7 +912,7 @@
                 "26 MHz AM": {
                     "name": "26 MHz AM",
                     "center_freq": 26000000,
-                    "samp_rate": 2400000,
+                    "samp_rate": 2000000,
                     "start_freq": 26000000,
                     "start_mod": "am",
                     "tuning_step": 1,
@@ -596,7 +921,7 @@
                 "27 MHz AM": {
                     "name": "27 MHz AM",
                     "center_freq": 30000000,
-                    "samp_rate": 2400000,
+                    "samp_rate": 2000000,
                     "start_freq": 30000000,
                     "start_mod": "am",
                     "tuning_step": 1,
@@ -631,194 +956,8 @@
                 }
             }
         },
-        "c7613a18-0863-4086-8e38-edca536e598e": {
-            "name": "VHF | 30 - 300 MHz - ",
-            "type": "rtl_sdr",
-            "profiles": {
-                "FM 88 MHz": {
-                    "name": "FM 88 MHz",
-                    "center_freq": 88000000,
-                    "samp_rate": 2400000,
-                    "start_freq": 88000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 89 MHz": {
-                    "name": "FM 89 MHz",
-                    "center_freq": 89000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 89000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 90 MHz": {
-                    "name": "FM 90 MHz",
-                    "center_freq": 90000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 90000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 91 MHz": {
-                    "name": "FM 91 MHz",
-                    "center_freq": 91000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 91000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 92 MHz": {
-                    "name": "FM 92 MHz",
-                    "center_freq": 92000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 92000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 93 MHz": {
-                    "name": "FM 93 MHz",
-                    "center_freq": 93000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 93000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 94 MHz": {
-                    "name": "FM 94 MHz",
-                    "center_freq": 94000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 94000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 95 MHz": {
-                    "name": "FM 95 MHz",
-                    "center_freq": 95000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 95000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 96 MHz": {
-                    "name": "FM 96 MHz",
-                    "center_freq": 96000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 96000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 97 MHz": {
-                    "name": "FM 97 MHz",
-                    "center_freq": 97000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 97000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 98 MHz": {
-                    "name": "FM 98 MHz",
-                    "center_freq": 98000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 98000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 99 MHz": {
-                    "name": "FM 99 MHz",
-                    "center_freq": 99000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 99000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 100 MHz": {
-                    "name": "FM 100 MHz",
-                    "center_freq": 100000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 100000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 101 MHz": {
-                    "name": "FM 101 MHz",
-                    "center_freq": 101000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 101000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 102 MHz": {
-                    "name": "FM 102 MHz",
-                    "center_freq": 102000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 102000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 103 MHz": {
-                    "name": "FM 103 MHz",
-                    "center_freq": 103000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 103000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 104 MHz": {
-                    "name": "FM 104 MHz",
-                    "center_freq": 104000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 104000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 105 MHz": {
-                    "name": "FM 105 MHz",
-                    "center_freq": 105000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 105000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 106 MHz": {
-                    "name": "FM 106 MHz",
-                    "center_freq": 106000000,
-                    "samp_rate": 1900000,
-                    "start_freq": 106000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                },
-                "FM 107 MHz": {
-                    "name": "FM 107 MHz",
-                    "center_freq": 107000000,
-                    "samp_rate": 2400000,
-                    "start_freq": 107000000,
-                    "start_mod": "wfm",
-                    "tuning_step": 50000,
-                    "rf_gain": "auto"
-                }
-            }
-        },
         "fbbca7bd-968e-418c-b4bf-a18722b64635": {
-            "name": "UHF | 300 - 1000 MHz - ",
+            "name": "300 - 1000 MHz -",
             "type": "rtl_sdr",
             "profiles": {
                 "3be8e4b5-1b7e-4917-9e07-1c297feb4f37": {
@@ -978,35 +1117,80 @@
                     "start_mod": "nfm",
                     "tuning_step": 1000,
                     "initial_squelch_level": -58
-                },
-                "1f128d31-5412-4356-a35e-81ad36bd0a61": {
-                    "name": "test",
-                    "rf_gain": "auto",
-                    "center_freq": 1100000,
-                    "samp_rate": 2400000,
-                    "start_freq": 1100000,
-                    "start_mod": "nfm",
-                    "tuning_step": 1
                 }
             }
         }
     },
+    "receiver_name": "[localhost]",
+    "receiver_location": "Anywhere",
+    "receiver_asl": 0,
+    "receiver_admin": "example@example.com",
+    "bandplan_region": 2,
+    "receiver_gps": {
+        "lat": 40.0583,
+        "lon": -74.4057
+    },
+    "gps_updates": false,
+    "photo_title": "[No Photo]",
+    "photo_desc": "",
+    "max_clients": 20,
+    "keep_files": 20,
+    "session_timeout": 0,
+    "usage_policy_url": "policy",
+    "allow_chat": true,
+    "allow_audio_recording": true,
+    "allow_center_freq_changes": false,
+    "magic_key": "memagic",
+    "receiver_keys": [],
+    "waterfall_scheme": "GoogleTurboWaterfall",
+    "fft_fps": 9,
+    "fft_size": 4096,
+    "fft_voverlap_factor": 0.3,
+    "waterfall_levels": {
+        "min": -88.0,
+        "max": -20.0
+    },
+    "waterfall_auto_levels": {
+        "min": 3.0,
+        "max": 10.0
+    },
+    "waterfall_auto_level_default_mode": true,
+    "waterfall_auto_min_range": 50,
+    "audio_compression": "adpcm",
+    "fft_compression": "adpcm",
+    "tuning_precision": 0,
+    "eibi_bookmarks_range": 0,
+    "repeater_range": 0,
+    "map_type": "google",
+    "google_maps_api_key": "",
+    "openweathermap_api_key": "",
+    "map_position_retention_time": 7200,
+    "map_call_retention_time": 300,
+    "map_max_calls": 5,
+    "map_ignore_indirect_reports": false,
+    "map_prefer_recent_reports": true,
+    "callsign_url": "https://www.qrzcq.com/call/{}",
+    "vessel_url": "https://www.vesselfinder.com/vessels/details/{}",
+    "flight_url": "https://flightaware.com/live/flight/{}",
+    "modes_url": "https://flightaware.com/live/modes/{}/redirect",
     "squelch_auto_margin": 10,
     "digimodes_fft_size": 2048,
     "wfm_deemphasis_tau": 5e-05,
     "wfm_rds_rbds": true,
-    "paging_filter": true,
     "cw_showcw": true,
+    "dsc_show_errors": true,
     "digital_voice_dmr_id_lookup": true,
     "digital_voice_nxdn_id_lookup": true,
     "adsb_ttl": 900,
     "vdl2_ttl": 1800,
     "hfdl_ttl": 1800,
     "acars_ttl": 1800,
+    "paging_charset": "US",
+    "paging_filter": true,
     "fax_lpm": 120,
     "fax_postprocess": true,
-    "fax_color": false,
-    "fax_am": false,
+    "fax_color": true,
+    "fax_am": true,
     "decoding_queue_workers": 2,
     "decoding_queue_length": 10,
     "wsjt_decoding_depth": 3,
